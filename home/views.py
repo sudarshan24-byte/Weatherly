@@ -2,11 +2,10 @@ from django.shortcuts import render
 import requests
 import datetime
 # Create your views here.
-# a86236dacffd8ba400f85495ee8233b1
-# Website Link: 
+# Website Link: https://openweathermap.org/current
 
 def home(request):
-    api = 'a86236dacffd8ba400f85495ee8233b1'
+    api = 'API KEY'
 
     today = datetime.date.today()
     formatted_date = today.strftime("%A, %d %B %Y")
