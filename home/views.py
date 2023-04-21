@@ -44,9 +44,9 @@ def home(request):
                 'description': response['weather'][0]['description'],
                 'date': formatted_date
             }
-    try:
-      print(contents)
-    except Exception as e:
-       print('Error: ', e)
+    # try:
+    #   print(contents)
+    # except Exception as e:
+    #    print('Error: ', e)
 
     return render(request, 'home.html', contents)
