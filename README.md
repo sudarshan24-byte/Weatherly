@@ -1,5 +1,5 @@
 # Weatherly
-Weather App with Python and Django
+This is a simple Django/Python weather app that displays the weather of any city you search for. It uses the OpenWeatherMap API to retrieve weather information and displays the temperature, weather condition, and a corresponding weather icon.
 
 ## Technology Used
 
@@ -10,6 +10,13 @@ Weather App with Python and Django
 ## Screenshots
 
 ![Screenshot 2023-04-21 220411](https://user-images.githubusercontent.com/110741425/233688949-cabcc899-7bab-43a6-a6a8-1d1657719fc6.png)
+
+
+## Features
+
+- Search for weather information by city
+- Displays the temperature, weather condition, and weather icon
+- Uses the OpenWeatherMap API to retrieve weather information
 
 
 ## Installation
