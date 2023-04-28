@@ -9,7 +9,7 @@ This is a simple Django/Python weather app that displays the weather of any city
 
 ## Screenshots
 
-![Screenshot 2023-04-21 220411](https://user-images.githubusercontent.com/110741425/233688949-cabcc899-7bab-43a6-a6a8-1d1657719fc6.png)
+![Screenshot 2023-04-29 010743](https://user-images.githubusercontent.com/110741425/235238250-52eeb110-1b70-4e0a-8141-ec80e81432c6.png)
 
 
 ## Features
