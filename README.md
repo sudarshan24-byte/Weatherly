@@ -17,7 +17,7 @@ This is a simple Django/Python weather app that displays the weather of any city
 - Search for weather information by city
 - Displays the temperature, weather condition, and weather icon
 - Uses the OpenWeatherMap API to retrieve weather information
-
+- Copy to Clipboard feature.
 
 ## Installation
 
