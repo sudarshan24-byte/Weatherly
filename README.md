@@ -5,6 +5,7 @@ This is a simple Django/Python weather app that displays the weather of any city
 
  - Python
  - Django
+ - JavaScript
 
 
 ## Screenshots
