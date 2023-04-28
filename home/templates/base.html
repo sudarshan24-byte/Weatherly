@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WEATHERLY</title>
 </head>
 
 <style>
@@ -42,12 +42,19 @@
 
     .form button{
         margin: 0px 35% 20px 35%;
-        color: white;
+        color: black;
         border: none;
-        background-color: #AA77FF;
+        border: 2px solid #008CBA;
+        background-color: white;
         padding: 5px 10px;
+        border-radius: 25px;
         cursor: pointer;
     }
+    .form button:hover{
+        background-color: #008CBA;
+        color: white;
+    }
+
     .inputbox{
         margin: 10px 0px;
         border-radius: 20px;
@@ -132,7 +139,23 @@
     .weather_card_infos_bottom {
         font-size: 12px;
         font-weight: 300;
-    }    
+    }
+    .btn{
+        margin: 0px 35% 20px 35%;
+        color: white;
+        border: none;
+        background-color: white;
+        border: 2px solid #008CBA;
+        color: black;
+        margin-top: 10px;
+        padding: 5px 6px;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: #008CBA;
+        color: white;
+    }
 </style>
 
 <body>
@@ -140,5 +163,30 @@
     
     
     {% endblock  %}
+
+    <script>
+        function copyToClipboard() {
+            // Get the weather/temperature data
+            let weatherData = document.getElementById("weather-data").innerText;
+            let countryData = document.getElementById("country-data").innerText;
+          
+            // Create a temporary input element to hold the weather data
+            let tempInput = document.createElement("input");
+            tempInput.value = `City: ${countryData} || Weather: ${weatherData}`;
+            document.body.appendChild(tempInput);
+          
+            // Select the weather data in the input element
+            tempInput.select();
+          
+            // Copy the selected weather data to the clipboard
+            document.execCommand("copy");
+          
+            // Remove the temporary input element
+            document.body.removeChild(tempInput);
+          
+            // Notify the user that the data has been copied
+            alert("Weather data copied to clipboard!");
+          }
+    </script>
 </body>
 </html>

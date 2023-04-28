@@ -4,7 +4,7 @@
 <div class="content_wrapper" id="app">
 	<div v-if="infos.city">
 		<h1>
-			Weather
+			Weatherly
 			<div class="date">{{date}}</div>
 		</h1>
 
@@ -23,10 +23,10 @@
 			</div>
 
 			<div class="weather_card_infos">
-				<div class="weather_card_infos_title">
+				<div class="weather_card_infos_title" id='country-data'>
 					{{city}} , {{country}}
 				</div>
-				<div class="weather_card_infos_temp">
+				<div class="weather_card_infos_temp" id='weather-data'>
 					{{tempCel}}°C /{{tempFah}} °F
 				</div>
                 <div class='description'>{{description}}</div>
@@ -38,6 +38,7 @@
 				</div>
 			</div>
 		</div>
+		<button class='btn' id="copy-to-clipboard-btn" onclick="copyToClipboard()">Copy to Clipboard</button>
 	</div>
 </div>
 
